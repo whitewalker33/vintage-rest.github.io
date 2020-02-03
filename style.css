@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Baloo+Bhai|Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton&display=swap");
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+.offsett {
+  width: 100%;
+  height: 6vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.carousel-item {
+  margin: 0;
+  padding: 0;
+  width: 100wh;
+  height: 100vh;
+}
+
+.slide1 {
+  background: url("img/people-drinking-liquor-and-talking-on-dining-table-close-up-696218.jpg")
+    no-repeat center center;
+  background-size: cover;
+}
+
+.slide2 {
+  background: url("img/background-black-blackboard-board-159770.jpg") no-repeat
+    center center;
+  background-size: cover;
+}
+
+.slide3 {
+  background: url("img/food-restaurant-meal-chicken-106343.jpg") no-repeat
+    center center;
+  background-size: cover;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 2s linear;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-around;
+  align-items: center !important;
+  min-height: 10vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  font-family: "Poppins", sans-serif;
+  z-index: 5;
+}
+
+.scrolled {
+  transition: 1s linear;
+  background-image: linear-gradient(rgb(255, 255, 255), rgba(255, 255, 255, 1));
+  box-shadow: 0px 1px 5px black;
+}
+
+/* .logo img {
+  height: 4.2rem;
+  width: auto;
+  position: absolute;
+  top: 0.4rem;
+  left: 5%;
+} */
+
+.logo {
+  color: #d81f26;
+  text-transform: capitalize;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 4px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.logo i {
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 1s linear;
+}
+
+.scrolledlinks a {
+  color: black !important;
+}
+
+.nav-links li a:hover {
+  color: rgb(233, 68, 73) !important;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  background-color: white;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: transform 0.5s ease;
+}
+
+.scrolledburger div {
+  background-color: black !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo img {
+    height: 4em;
+    width: auto;
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: rgba(216, 31, 38, 0.91);
+    right: 0px;
+    height: 90vh;
+    top: 9.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    width: 50%;
+    transform: translatex(100%);
+    transition: transform 0.5s ease;
+  }
+
+  .scrolledlinks a {
+    color: white !important;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  /* .menu-bg {
+    display: none;
+  } */
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.heading {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+}
+
+.history {
+  color: #d81f26;
+  text-transform: capitalize;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.openclose {
+  background: url("img/open_bg.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.openclose .heading {
+  font-family: "Anton", sans-serif;
+  font-size: 35px;
+  letter-spacing: 3px;
+}
+
+.openclose span {
+  color: rgb(255, 0, 0);
+}
+
+.menu {
+  min-height: 50;
+  overflow: hidden;
+  z-index: 1;
+  position: relative;
+}
+
+.menu-bg {
+  position: absolute;
+  top: 0;
+  left: -5%;
+  /* overflow: hidden; */
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.actual-menu h3 {
+  font-family: "Anton", sans-serif !important;
+  font-size: 1.3em;
+}
+
+.actual-menu p {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-btn-div {
+  display: flex;
+  margin: 0 auto 2em auto !important;
+  z-index: 3;
+}
+
+.menu-btn {
+  background-color: #d81f26 !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif;
+}
+
+.gallery-section {
+  height: auto;
+  padding: 40px 10px !important;
+  overflow: hidden;
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 900px;
+  margin: auto auto 2rem auto;
+  padding: 0 20px;
+}
+
+.gallery-section .actual-gallery {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image {
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.gallery-section .image:hover img {
+  transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width: 960px) {
+  .gallery-section .image {
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-section .image {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-section .image {
+    flex: 100%;
+  }
+}
+
+.location {
+  height: auto;
+}
+
+.map-border {
+  padding: 1em;
+  border: 2px solid #d81f26;
+  border-radius: 25px;
+  height: 60vh;
+  width: 85vw;
+}
+.map-size {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid black !important;
+}
+.map-btn-div {
+  display: flex;
+  margin: auto;
+}
+
+.map-btn {
+  color: white !important;
+  background-color: #d81f26 !important;
+  margin: 3em auto;
+}
+
+.footer {
+  min-height: 30vh;
+  background-color: rgb(39, 31, 31);
+  color: rgb(194, 54, 54);
+  /* box-shadow: 0px 2px 10px black; */
+}
+
+.footer h2 {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Pacifico", cursive;
+  letter-spacing: 3px;
+  font-size: 22px;
+}
