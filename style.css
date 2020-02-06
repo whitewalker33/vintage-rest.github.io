@@ -26,20 +26,17 @@
 }
 
 .slide1 {
-  background: url("img/people-drinking-liquor-and-talking-on-dining-table-close-up-696218.jpg")
-    no-repeat center center;
+  background: url("img/people-drinking-liquor-and-talking-on-dining-table-close-up-696218.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .slide2 {
-  background: url("img/background-black-blackboard-board-159770.jpg") no-repeat
-    center center;
+  background: url("img/background-black-blackboard-board-159770.jpg") no-repeat center center;
   background-size: cover;
 }
 
 .slide3 {
-  background: url("img/food-restaurant-meal-chicken-106343.jpg") no-repeat
-    center center;
+  background: url("img/food-restaurant-meal-chicken-106343.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -334,12 +331,14 @@ nav {
   height: 60vh;
   width: 85vw;
 }
+
 .map-size {
   width: 100%;
   height: 100%;
   border-radius: 20px;
   border: 1px solid black !important;
 }
+
 .map-btn-div {
   display: flex;
   margin: auto;
@@ -353,9 +352,9 @@ nav {
 
 .footer {
   min-height: 30vh;
-  background-color: rgb(39, 31, 31);
-  color: rgb(194, 54, 54);
-  /* box-shadow: 0px 2px 10px black; */
+  background-color: #1d1e22;
+  color: white;
+  box-shadow: 0px 1px 10px black;
 }
 
 .footer h2 {
@@ -364,4 +363,58 @@ nav {
   font-family: "Pacifico", cursive;
   letter-spacing: 3px;
   font-size: 22px;
+}
+
+footer .inner {
+  background-color: #6b2929;
+  border-radius: 0.5em;
+  margin: 1.7em 1em 0.5em 1em;
+  padding: 2rem;
+  height: auto;
+  color: white;
+}
+
+
+
+footer .social {
+  display: flex;
+  min-height: 20vh;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social a {
+  margin: auto 0.3em;
+  background-color: #6b2929;
+  color: white;
+  padding: 1em;
+  width: 3.5em;
+  height: auto;
+  border-radius: 50%;
+  border: 0.5px solid white;
+}
+
+footer .last-col {
+  margin: 1.7em 3.5em 1em 3.5em;
+}
+
+
+footer .credit-row {
+  border-top: 1px solid grey;
+  height: 8vh;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+
+}
+
+footer .up a {
+  color: white;
+  transition: 0.5s ease;
+}
+
+.up a:hover {
+  color: #6b2929;
 }

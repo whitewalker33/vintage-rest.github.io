@@ -10,6 +10,11 @@ const scroll = new SmoothScroll('nav a[href*="#"]', {
   speed: 700
 });
 
+const scroll2 = new SmoothScroll('.up a[href*="#"]', {
+  speed: 400
+});
+
+
 // Photo gallery application
 $(".actual-gallery").magnificPopup({
   delegate: 'a',
