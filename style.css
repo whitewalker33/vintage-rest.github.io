@@ -26,17 +26,20 @@
 }
 
 .slide1 {
-  background: url("img/people-drinking-liquor-and-talking-on-dining-table-close-up-696218.jpg") no-repeat center center;
+  background: url("img/people-drinking-liquor-and-talking-on-dining-table-close-up-696218.jpg")
+    no-repeat center center;
   background-size: cover;
 }
 
 .slide2 {
-  background: url("img/background-black-blackboard-board-159770.jpg") no-repeat center center;
+  background: url("img/background-black-blackboard-board-159770.jpg") no-repeat
+    center center;
   background-size: cover;
 }
 
 .slide3 {
-  background: url("img/food-restaurant-meal-chicken-106343.jpg") no-repeat center center;
+  background: url("img/food-restaurant-meal-chicken-106343.jpg") no-repeat
+    center center;
   background-size: cover;
 }
 
@@ -374,8 +377,6 @@ footer .inner {
   color: white;
 }
 
-
-
 footer .social {
   display: flex;
   min-height: 20vh;
@@ -398,7 +399,6 @@ footer .last-col {
   margin: 1.7em 3.5em 1em 3.5em;
 }
 
-
 footer .credit-row {
   border-top: 1px solid grey;
   height: 8vh;
@@ -407,12 +407,11 @@ footer .credit-row {
   justify-content: center;
   color: white;
   font-size: 0.8rem;
-
 }
 
 footer .up a {
   color: white;
-  transition: 0.5s ease;
+  transition: transform 0.3s ease-out;
 }
 
 .up a:hover {
